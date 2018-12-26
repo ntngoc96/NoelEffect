@@ -1,0 +1,210 @@
+body{
+    margin:0;
+    padding:0;
+    background:#0433 url('https://pro2-bar-s3-cdn-cf2.myportfolio.com/3759529585a862a080aab9427fb20aa4/de5121b9-ec05-4066-8f74-68e4470b557b_rw_1920.png?h=3b60912fdb6e5b16bee48d27ec5dc8e2') no-repeat;
+  /*   background:#0433 url('https://cdn.dribbble.com/users/1016207/screenshots/2818276/artboard_1.png') no-repeat; */
+    overflow:hidden;
+    height:100vh;
+    background-size:cover;
+    background-position:center bottom;
+  }
+  
+  .heart{
+    Position:absolute;
+    top:55%;
+    right:10%;
+  }
+  
+  .girl,.snowman{
+    Position:absolute;
+    top:70%;
+    right:10%;
+    width:66px;
+    height:126.45px;
+  }
+  
+  .girl img,.snowman img,.snow1 img,.snow2 img,.snow4 img,.snow3 img,.snow5 img{
+    width:100%;
+    height:100%;
+  } 
+  
+  .heart img{
+    width:64px;
+    height:64px;
+    
+  }
+  
+  .boy{
+    Position:absolute;
+    top:70%;
+    left:-10%;
+    width:85px;
+    height:120px;
+  }
+  
+  .boy img{
+    width:100%;
+    height:100%;
+  }
+
+  .question,.exclamation{
+    width: 45px;
+    height:60px;
+    position: absolute;
+      left:25%;
+      top:-10%;
+    visibility: hidden;
+  }
+    .question img,.exclamation img{
+      width:100%;
+      height:100%;
+      position: absolute;
+      left:30%;
+      top:-80%;
+    }
+    .boy-heart{
+      position: absolute;
+      width:32px;
+      height:32px;
+      animation: dingding 1s linear 0s infinite;
+      top:50%;
+      left:80%;
+    }
+
+  .snowman{
+    Position:absolute;
+    top:15%;
+    right:4%;
+    width:135px;
+    height:143.45px;
+    transform: translate(-50%,-50%);
+    visibility: hidden;
+  }
+  
+  .snow1{
+    Position:absolute;
+    top:83%;
+    right:9%;
+    width:96px;
+    height:64px;
+  }
+  
+  .snow2{
+    Position:absolute;
+    top:78%;
+    right:9%;
+    width:96px;
+    height:64px;
+  }
+  .snow3{
+    Position:absolute;
+    top:75%;
+    right:9%;
+    width:96px;
+    height:64px;
+  }
+  
+  .snow4{
+    Position:absolute;
+    top:70%;
+    right:9%;
+    width:96px;
+    height:64px;
+  }
+  .snow5{
+    Position:absolute;
+    top:69%;
+    right:10%;
+    width:64px;
+    height:32px;
+  }
+  
+  .snow1,.snow2,.snow3,.snow4,.snow5{
+    visibility:hidden;
+    transition: 300ms;
+  }
+
+  .christmas{
+    position: absolute;
+    top:40%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    visibility: hidden;
+  }
+  .christmas img{
+    width:80%;
+    height:80%;
+  }
+
+  .christmas img,.pine img, .bell img, .snowman img{
+    animation: dingding 2s linear 1s infinite alternate;
+  }
+  
+  .pine{
+    position: absolute;
+    top:72%;
+    right:10%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    width:120px;
+    height:162px;
+    visibility: hidden;
+  }
+
+  .pine img{
+    width:100%;
+    height:100%;
+  }
+
+  .bell{
+    position: absolute;
+    top:3%;
+    left:17%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    width:240px;
+    height:142px;
+    transform: rotate(-25deg);
+    visibility: hidden;
+  }
+
+  .bell img{
+    width:100%;
+    height:100%;
+  }
+  @keyframes beat{
+      0%{ transform: scale(1)}
+      25%{ transform: scale(1.3)}
+      50%{  transform: scale(1.6)}
+      75%{ transform: scale(1.8);}
+      100%{ transform: scale(2);}
+  }
+  
+  @-webkit-keyframes beat{
+      0%{ transform: scale(1)}
+      25%{ transform: scale(1.2)}
+      50%{  transform: scale(1.5)}
+      75%{ transform: scale(1.7)}
+      100%{ transform: scale(2); opacity: 0}
+  }
+  
+  @keyframes dingding{
+    0%{ transform: rotate(5deg)}
+    25%{ transform: rotate(0deg)}
+    50%{  transform: rotate(-5deg)}
+    75%{ transform: rotate(0deg);}
+    100%{ transform: rotate(5deg)}
+}
+  
+@keyframes suprise{
+  0%{ transform: scale(1)}
+  100%{ transform: scale(1.5)}
+}
+  .information{
+      position: absolute;
+      right:0;
+      top:0;
+      z-index: 999;
+    color:white;
+  }
